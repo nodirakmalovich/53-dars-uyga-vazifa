@@ -1,38 +1,552 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@160..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 33px;
+}
+
+#dropdown-basic {
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.navbar_menu {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_menu_link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar_actions {
+  display: flex;
+  gap: 13px;
+}
+
+.navbar_actions_search {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url(../src/assets/search.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.navbar_actions_basket {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: url(../src/assets/basket.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.corusel_slide {
+  position: relative;
+}
+
+.corusel_body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.corusel_title {
+  position: absolute;
+  left: 0px;
+  top: 145px;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 69.6px;
+  text-align: left;
+  color: black;
+  width: 588px;
+  height: 140px;
+}
+
+.corusel_text {
+  position: absolute;
+  width: 565px;
+  height: 39px;
+  top: 304px;
+  left: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: black;
+}
+
+.corusel_btn {
+  position: absolute;
+  width: 170px;
+  height: 50px;
+  border-radius: 200px !important;
+  border: 1px solid black;
+  top: 373px;
+  left: 0;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 20px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  right: 20px;
+}
+
+.hero {
+  margin-top: 75px;
+}
+
+.hero_title {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52.5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  width: 628px;
+  height: 34px;
+  margin: 0 auto;
+  margin-bottom: 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_col {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
+
+.hero_row_main_card {
+  width: 639px;
+  height: 472px;
+  padding: 0 42px;
+  padding-bottom: 50px;
+  box-shadow: 0px 4px 35px 0px #00000040;
+}
+
+.hero_card_link {
+  text-decoration: none;
+  color: black;
+}
+
+.first_card {
+  margin-bottom: 50px;
+}
+
+.hero_row_main_card_title {
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+.hero_row_main_card_text {
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  width: 192px;
+  height: 77px;
+  margin-left: auto;
+}
+
+
+.hero_row_main_card_second {
+  width: 639px;
+  height: 270px;
+  box-shadow: 0px 4px 35px 0px #00000040;
+  position: relative;
+}
+
+.second_image {
+  position: absolute;
+  z-index: -1;
+}
+
+.card_content {
+  margin-left: auto;
+  padding-top: 100px;
+  margin-right: 42px;
+}
+
+.second_card_col {
+  text-decoration: none;
+  color: black;
+  width: 312px !important;
+  left: 655px;
+  box-shadow: 0px 4px 35px 0px #00000040;
+  background-color: white;
+  overflow: hidden;
+  padding: 0 !important;
+  padding-top: 145px !important;
+}
+
+.hero_row_second_col_content {
+  margin-top: 42px;
+}
+
+.hero_row_second_col_content_title {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+}
+
+.hero_row_second_col_content_text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  text-align: center;
+  width: 250px;
+  height: 77px;
+  margin: 0 auto;
+  margin-bottom: 41px;
+}
+
+.hero_row_second_col {
+  text-decoration: none;
+  color: black;
+}
+
+.hero_row_main {
+  gap: 10px;
+}
+
+.third_card_col {
+  text-decoration: none;
+  color: black;
+  width: 312px !important;
+  box-shadow: 0px 4px 35px 0px #00000040;
+  background-color: white;
+  overflow: hidden;
+  padding: 0 !important;
+  padding-top: 145px !important;
+
+}
+
+.hero_row_third_col {
+  text-decoration: none;
+  color: black;
+}
+
+.product_row {
+  justify-content: space-between;
+}
+
+.product_row_card {
+  border: 1px solid transparent !important;
+}
+
+.product_row_card:hover {
+  border: 1px solid black !important;
+}
+
+.product_title {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52.5px;
+  text-align: center;
+  margin-top: 72px;
+}
+
+.product_text {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.best_row {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 28px;
+}
+
+.best_row_card {
+  border-radius: 16px;
+  background-color: #F8F9FA;
+  padding-top: 41px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.best_card_title {
+  width: 100%;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+}
+
+.best_card_text {
+  width: 100%;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+
+}
+
+.best_btn_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.best_btn {
+  border-radius: 200px !important;
+  padding: 14px 63px !important;
+}
+
+.ideas_text {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 28px;
+
+}
+
+.ideas_link_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 73px;
+}
+
+.ideas_link {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+
+#searchInput {
+  width: 650px;
+  height: 60px;
+  padding-left: 80px;
+  border-radius: 100px;
+  border: 1px solid #C5C5C5;
+  background: url(./assets/search.svg);
+  background-position: 20px center;
+  background-size: 5%;
+  background-repeat: no-repeat;
+  margin: 14px auto;
+
+}
+
+.search_buttons {
+  width: 660px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search_btn {
+  border-radius: 200px !important;
+}
+
+.search_col {
+  background: #DCE5E2;
+  border-radius: 16px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 43px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search_title {
+  width: 100%;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 52.5px;
+  text-align: center;
+
+}
+
+.search_image_div {
+  width: 100%;
+  text-align: center;
+}
+
+.search_text {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+}
+
+.search_input {
+  display: block;
+  width: 400px !important;
+  height: 50px;
+  margin-top: 41px;
+}
+
+.search_input_item {
+  width: 285px;
+  height: 50px;
+  border-radius: 54px 0px 0px 54px !important;
+  border: 1px solid black !important;
+  outline: none !important;
+}
+
+#button-addon2 {
+  width: 115px;
+  height: 50px;
+  border-radius: 0px 200px 200px 0px;
+  background: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search_input_item:focus {
+  outline: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_last_row {
+  margin-top: 75px;
+}
+
+.footer_menu {
+  display: block;
+}
+
+.footer_item {
+  margin: 10px 0;
+}
+
+.footer_item_link {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+
+}
+
+.footer {
+  margin-top: 28px;
+  padding-top: 30px;
+  background: #F8F9FA;
+}
+
+.footer_text {
+  margin-top: 18px;
+}
+
+.footer_bottom {
+  margin-top: 80px;
+  border-top: 1px solid #DCE5E2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_bottom_div {
+  margin-top: 53px;
+  display: flex;
+}
+
+.footer_bottom_div_text {
+  margin: 0;
+  font-family: "Readex Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+
+}
+
+.footer_bottom_div_link {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+
 }
