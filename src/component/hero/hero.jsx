@@ -10,6 +10,7 @@ import mini from "../../assets/mini.svg";
 import HeaderComponent from "../HeaderComponent/HeaderComponent";
 
 export default function Hero() {
+    console.log("Changed");
   return (
     <Container>
       <div className="hero">
